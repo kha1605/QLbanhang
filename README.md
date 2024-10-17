@@ -33,3 +33,54 @@ Hệ thống Quản lý Sản phẩm là một ứng dụng cho phép người d
 - **Thanh toán**: Thực hiện thanh toán cho các đơn hàng.
 - **Quản lý thông tin cá nhân**: Thêm, cập nhật, sửa, xóa thông tin cá nhân.
 - **Xem hóa đơn**: Kiểm tra và xem các hóa đơn đã thanh toán.
+
+# Hướng Dẫn Xây Dựng Dự Án C# Tại Local
+
+## Mục Lục
+- [Giới Thiệu](#giới-thiệu)
+- [Bước 1: Cài Đặt Môi Trường Phát Triển](#bước-1-cài-đặt-môi-trường-phát-triển)
+- [Bước 2: Tạo hoặc Clone Dự Án](#bước-2-tạo-hoặc-clone-dự-án)
+- [Bước 3: Cài Đặt Các Thư Viện và Gói Cần Thiết](#bước-3-cài-đặt-các-thư-viện-và-gói-cần-thiết)
+- [Bước 4: Build Dự Án](#bước-4-build-dự-án)
+- [Bước 5: Chạy Ứng Dụng](#bước-5-chạy-ứng-dụng)
+- [Bước 6: Kiểm Tra Kết Quả](#bước-6-kiểm-tra-kết-quả)
+- [Kết Luận](#kết-luận)
+
+## Giới Thiệu
+Hướng dẫn này cung cấp các bước chi tiết để xây dựng và chạy một dự án C# ở local. Hướng dẫn áp dụng cho các dự án ASP.NET hoặc ứng dụng Console sử dụng .NET Framework hoặc .NET Core.
+
+## Bước 1: Cài Đặt Môi Trường Phát Triển
+
+1. **Cài đặt Visual Studio**:
+   - Tải và cài đặt [Visual Studio](https://visualstudio.microsoft.com/). Chọn phiên bản Community nếu bạn muốn sử dụng miễn phí.
+
+2. **Cài đặt .NET SDK** (nếu bạn phát triển với .NET Core):
+   - Tải và cài đặt [.NET SDK](https://dotnet.microsoft.com/download).
+
+## Bước 2: Tạo hoặc Clone Dự Án
+
+1. **Tạo Dự Án Mới**:
+   - Mở Visual Studio.
+   - Chọn **Create a new project**.
+   - Chọn loại dự án bạn muốn (ASP.NET Web Application, Console Application, v.v.) và nhấn **Next**.
+   - Đặt tên cho dự án và chọn vị trí lưu trữ, sau đó nhấn **Create**.
+
+2. **Clone Dự Án Từ GitHub**:
+   - Mở Terminal hoặc Command Prompt.
+   - Sử dụng lệnh sau để clone dự án:
+     ```bash
+     git clone https://github.com/kha1605/QLbanhang.git
+     cd repository
+     ```
+
+## Bước 3: Cài Đặt Các Thư Viện và Gói Cần Thiết
+
+Nếu dự án của bạn sử dụng NuGet để quản lý các gói thư viện:
+
+- Mở **Package Manager Console** trong Visual Studio:
+  - Đi tới **Tools** > **NuGet Package Manager** > **Package Manager Console**.
+
+- Chạy lệnh sau để cài đặt các gói cần thiết:
+  ```powershell
+  Update-Package
+
